@@ -8,8 +8,7 @@ import java.util.Stack;
 
 public class FloorConstruction {
 	
-	public int totalFloors;
-	public int[] totalFloorSize;
+	
 	
 
 	
