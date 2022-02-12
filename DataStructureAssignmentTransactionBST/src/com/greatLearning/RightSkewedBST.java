@@ -24,7 +24,8 @@ public class RightSkewedBST {
 
 	        if (order > 0) {
 	            createSkewedTree(root.right, order);
-	        } else {
+	        } 
+		else {
 	            createSkewedTree(root.left, order);
 	        }
 	        Node rightNode = root.right;
@@ -34,7 +35,8 @@ public class RightSkewedBST {
 	            headNode = root;
 	            root.left = null;
 	            prevNode = root;
-	        } else {
+	        } 
+		else {
 	            prevNode.right = root;
 	            root.left = null;
 	            prevNode = root;
@@ -42,7 +44,8 @@ public class RightSkewedBST {
 
 	        if (order > 0) {
 	            createSkewedTree(leftNode, order);
-	        } else {
+	        } 
+		else {
 	            createSkewedTree(rightNode, order);
 	        }
 	    }
@@ -59,7 +62,7 @@ public class RightSkewedBST {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		RightSkewedBST tree = new RightSkewedBST();
+	     RightSkewedBST tree = new RightSkewedBST();
 	     tree.node = new Node(50);
 	     tree.node.left = new Node(30);
 	     tree.node.right = new Node(60);
