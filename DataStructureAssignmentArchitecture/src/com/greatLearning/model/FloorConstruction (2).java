@@ -51,27 +51,28 @@ public class FloorConstruction {
 		Stack temp = new Stack();
 		
 		for (int i = 0; i < number; i++) {
-            System.out.println("Day: " + (i + 1));
-            int sizeday= floorsize[i];
+			System.out.println("Day: " + (i + 1));
+                        int sizeday= floorsize[i];
             
-            int largestFloorSize = (Integer) sizefloor.peek();
-            if (sizeday != largestFloorSize) {
-                temp.push(sizeday);
-            } else {
-                System.out.print(sizefloor.pop() + " ");
-                while (!temp.isEmpty() && sizefloor.peek() == temp.peek()) {
-                    System.out.print(sizefloor.pop() + " ");
-                    temp.pop();
-                }
-            }
-            System.out.println("");
-        }
+                        int largestFloorSize = (Integer) sizefloor.peek();
+                        if (sizeday != largestFloorSize) {
+				temp.push(sizeday);
+            		} 
+			else {
+                		System.out.print(sizefloor.pop() + " ");
+               	 		while (!temp.isEmpty() && sizefloor.peek() == temp.peek()) {
+                    			System.out.print(sizefloor.pop() + " ");
+                    			temp.pop();
+                		}
+            		}
+            		System.out.println("");
+        	}
         
        
-    }
+    	}
 		
 		
-	}
+}
 	
 	
 
